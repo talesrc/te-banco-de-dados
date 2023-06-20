@@ -1,0 +1,15 @@
+boto3==1.26.155
+botocore==1.29.155
+greenlet==2.0.2
+jmespath==1.0.1
+numpy==1.25.0
+pandas==2.0.2
+psycopg2-binary==2.9.6
+python-dateutil==2.8.2
+pytz==2023.3
+s3transfer==0.6.1
+six==1.16.0
+SQLAlchemy==2.0.16
+typing_extensions==4.6.3
+tzdata==2023.3
+urllib3==1.26.16
