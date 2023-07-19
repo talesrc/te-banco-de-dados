@@ -1,8 +1,8 @@
-FROM python:3.9-alpine
+FROM python:3.10-buster
 
 WORKDIR /app
 
-COPY main.py main.py
+COPY . .
 
 COPY requirements.txt requirements.txt
 

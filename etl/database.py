@@ -8,8 +8,9 @@ DATABASE = os.environ["DATABASE"]
 DATABASE_USER = os.environ["DATABASE_USER"]
 DATABASE_PASSWORD = os.environ["DATABASE_PASSWORD"]
 DATABASE_HOST = os.environ["DATABASE_HOST"]
+DATABASE_PORT = os.environ["DATABASE_PORT"]
 
-engine = create_engine(f"postgresql+psycopg2://{DATABASE_USER}:{DATABASE_PASSWORD}@{DATABASE_HOST}:5432/{DATABASE}")
+engine = create_engine(f"postgresql+psycopg2://{DATABASE_USER}:{DATABASE_PASSWORD}@{DATABASE_HOST}:{DATABASE_PORT}/{DATABASE}")
 
 db_session = scoped_session(
     sessionmaker(
